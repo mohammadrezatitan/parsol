@@ -53,15 +53,15 @@ screen ./parsol.sh
 * * *
 
 
-[mohammadrezajiji]((https://telegram.me/mohammadrezajiji)
+# [mohammadrezajiji](https://telegram.me/mohammadrezajiji)
 
 
 ###  Telegram channel:
 
-[titantim](https://telegram.me/titantims)
+# [titantim](https://telegram.me/titantims)
 
 ### thanks to   
 
-[beyondtim](https://telegram.me/BeyondTeam)
+# [beyondtim](https://telegram.me/BeyondTeam)
 
-[luaerror](https://telegram.me/luaerror)
+# [luaerror](https://telegram.me/luaerror)
