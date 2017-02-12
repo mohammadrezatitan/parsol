@@ -67,5 +67,5 @@ screen ./parsol.sh
 # [luaerror](https://telegram.me/luaerror)
 
 * * *
-Please send us your stars at the top of this page
+》*Please send us your stars☆ at the top of this page*
 
