@@ -19,8 +19,8 @@ local data = load_data(_config.moderation.data)
       end
    end
 end
-    if data[tostring(chat)] and data[tostring(chat)]['mutes'] then
-		mutes = data[tostring(chat)]['mutes']
+    if data[tostring(chat)] and data[tostring(chat)]['settings'] then
+		mutes = data[tostring(chat)]['settings']
 	else
 		return
 	end
