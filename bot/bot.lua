@@ -82,7 +82,19 @@ function create_config( )
     "groupmanager",
     "msg-checks",
     "plugins",
-    "tools"
+    "tools",
+    "expiretime",
+    "fosh",
+    "mute_time",
+    "myinfo",
+    "nerkh",
+    "ofn",
+    "pic",
+    "ping",
+    "time",
+    "time1",
+    "write",
+    "del"
  },
     sudo_users = {157059515},
     admins = {},
@@ -94,27 +106,27 @@ An advanced administration bot based on https://valtman.name/telegram-cli
 》https://github.com/BeyondTeam/BDReborn 
 
 》Admins :
-》@SoLiD ➣ Founder & Developer《
-》@Makan ➣ Developer《
-》@Rixel ➣ Developer 《
-》@Exacute ➣ Developer《
-》@CiveY ➣ Developer
-》@ArmanDev ➣ Manager《
-》@MrPars ➣ Manager《
+》@mohammadrezajiji
+》
+》
+》
+
+》
+》
 
 》Special thanks to :
-》@Vysheng
-》@MrHalix
-》@K_a_I_i_I_i_n_u_x
-》@Nero_Dev
-》And Beyond Team Members
+》@Tele_sudo
+》@Luaerror
+》
+》
+》
 
 》Our channel :
-》@BeyondTeam《
+》@titantims
 
-》Our website :
-》http://BeyondTeam.ir
-]],
+》
+》
+]]
   }
   serialize_to_file(config, './data/config.lua')
   print ('saved config into conf.lua')
