@@ -7,7 +7,7 @@
 
 ## Commands
 
-| !help |and ...
+| !help | and ...
 
 * * *
 
