@@ -58,11 +58,11 @@ screen ./parsol.sh
 
 ###  Telegram channel:
 
-# [titantim](https://telegram.me/titantims)
+# [titanteam](https://telegram.me/titantims)
 
 ### thanks to   
 
-# [beyondtim](https://telegram.me/BeyondTeam)
+# [beyondteam](https://telegram.me/BeyondTeam)
 
 # [luaerror](https://telegram.me/luaerror)
 
