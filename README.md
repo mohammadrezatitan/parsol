@@ -28,7 +28,7 @@ cd $HOME && git clone https://github.com/mohammadrezatitan/parsol.git && cd pars
 
 * * *
 
-### تایین سودو برای ربات
+### `تایین سودو برای ربات`
  قرار بدین سپس کد لانچ را وارد کنید  `tools`  خط 2   `plugins` همچنین در پوشیه  `data` در پوشه `config` ایدی عددی خودتون رو پس از نصب در خط 33 
 ```
     sudo_users = {
@@ -36,7 +36,7 @@ cd $HOME && git clone https://github.com/mohammadrezatitan/parsol.git && cd pars
     YourID
   }
 ```
-### لانچ
+### `لانچ`
 ```
 killall screen
 killall .telegram-cli
