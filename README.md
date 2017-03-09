@@ -30,18 +30,14 @@ cd $HOME && git clone https://github.com/mohammadrezatitan/parsol.git && cd pars
 * * *
 
 ### تایین سودو برای ربات
- قرار بدین سپس کد لانچ را وارد کنید  پلاگ tools خط 2   `plugins` همچنین در پوشیه  `data` در پوشه `config` ایدی عددی خودتون رو پس از نصب در خط 33 
+ قرار بدین سپس کد لانچ را وارد کنید  `tools`  خط 2   `plugins` همچنین در پوشیه  `data` در پوشه `config` ایدی عددی خودتون رو پس از نصب در خط 33 
 ```
     sudo_users = {
     267785153,
     YourID
   }
 ```
-add your bot ID at line 4 and add your ID at line 99 in bot.lua
-add your ID at line 2 in tools.lua
-Then restart the bot.
-
-### launch
+### لانچ
 ```
 killall screen
 killall .telegram-cli
