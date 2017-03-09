@@ -1293,9 +1293,8 @@ text = [[
 ]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'md')
 end
+end
 
-end
-end
 
 return { 
 patterns = {                                                                   
