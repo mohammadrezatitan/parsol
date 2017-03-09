@@ -69,7 +69,13 @@ function create_config( )
 		"plugins",
 		"tools",
 		"fun",
-		"info"
+		"info",
+		"del",
+		"nerkh",
+		"pic",
+		"ping",
+		"time1",
+		"write"	
 	},
     sudo_users = {267785153},
     admins = {},
