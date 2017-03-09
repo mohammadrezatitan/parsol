@@ -1299,7 +1299,7 @@ end
 
 return { 
 patterns = {                                                                   
-"^[!/#](helptools)$", 
+"^(دستورات سودو)$", 
 "^[!/#](visudo)$", 
 "^[!/#](desudo)$",
 "^[!/#](sudolist)$",
