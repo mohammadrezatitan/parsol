@@ -156,7 +156,7 @@ local function setrank_by_reply(arg, data)
 end
 
 local function run(msg, matches)
-if matches[1] == "info" then
+if matches[1] == "اطلاعات من" then
 if not matches[2] and tonumber(msg.reply_to_message_id_) ~= 0 then
     tdcli_function ({
       ID = "GetMessage",
