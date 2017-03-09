@@ -1,6 +1,6 @@
 --Start By 
 local function run(msg, matches)
-  if msg.content_.text_ == '/mypic' or '!mypic' or '#mypic' then
+  if msg.content_.text_ == 'عکس من' then
     function get_pic(arg, data)
       if data.first_name_ then
 
@@ -18,7 +18,7 @@ end
 
 return {
 patterns = {
-"^[/!#](mypic)$"
+"^(عکس من)$"
 
 },
 run = run
