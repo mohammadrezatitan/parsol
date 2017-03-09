@@ -6,12 +6,12 @@
 
 ### دستورات
 
-| راهنما | , ...
+*| راهنما | , ...*
 
 * * *
 
 #` نصب ربات`
-روش اول
+*روش اول
 ```sh
 cd $HOME
 git clone https://github.com/mohammadrezatitan/parsol.git
