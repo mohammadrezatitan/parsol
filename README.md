@@ -1,4 +1,4 @@
-# [parsolv.2](https://telegram.me/titantims)
+# [parsol v.2](https://telegram.me/titantims)
 
 `سورسی کاملا فارسی در زمینه تیجی های جدید :)`
 
