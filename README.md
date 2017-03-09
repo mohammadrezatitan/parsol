@@ -11,7 +11,7 @@
 * * *
 
 #` نصب ربات`
-*روش اول
+*روش اول*
 ```sh
 cd $HOME
 git clone https://github.com/mohammadrezatitan/parsol.git
@@ -21,7 +21,7 @@ chmod +x parsol.sh
 ./parsol.sh # Enter a phone number & confirmation code.
 ```
 ### `نصب ربات`
-روش دوم کد یک پارچه
+*روش دوم کد یک پارچه*
 ```sh
 cd $HOME && git clone https://github.com/mohammadrezatitan/parsol.git && cd parsol && chmod +x parsol.sh && ./parsol.sh install && ./parsol.sh
 ```
