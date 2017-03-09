@@ -7,8 +7,8 @@ local text = '*⏰Ir Time:* _'..jdat.FAtime..'_\n*📆Ir Data:* _'..jdat.FAdate.
   tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'md')
 end
 return {
-  patterns = {"^[/!]([Tt][iI][Mm][Ee])$"}, 
+  patterns = {"^(ساعت)$"}, 
 run = run 
 }
 --End By @mohammadrezajiji
---Channel 
+--Channel @titantims
