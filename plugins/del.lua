@@ -25,7 +25,7 @@ end
 
 return {
     patterns = {
-        '^[!#/](rmsg) (%d*)$',
+        '^(پاک کردن) (%d*)$',
     },
     run = run
 }
