@@ -1,18 +1,18 @@
 # [parsol](https://telegram.me/titantims)
 
-*new tg*
+#سورسی کاملا فارسی در زمینه تیجی های جدید :)
 
 
 * * *
 
-## Commands
+## دستورات
 
-| !help | and ...
+| راهنما | , ...
 
 * * *
 
-# Install bot
-
+# نصب ربات
+روش اول
 ```sh
 cd $HOME
 git clone https://github.com/mohammadrezatitan/parsol.git
@@ -21,17 +21,16 @@ chmod +x parsol.sh
 ./parsol.sh install
 ./parsol.sh # Enter a phone number & confirmation code.
 ```
-### install bot(2)
+### نصب ربات
+روش دوم کد یک پارچه
 ```sh
 cd $HOME && git clone https://github.com/mohammadrezatitan/parsol.git && cd parsol && chmod +x parsol.sh && ./parsol.sh install && ./parsol.sh
 ```
 
 * * *
 
-### Sudo And Bot
-After you run the bot for first time, send it `!id`. Get your ID and stop the bot.
-
-Open ./bot/bot.lua and add your ID to the "sudo_users" section in the following format:
+### تایین سودو برای ربات
+ قرار بدین سپس کد لانچ را وارد متید tools پلاگ خط 2   `plugins` همچنین در پوشیه  `data` در پوشه `config` ایدی عددی خودتون رو پس از نصب در خط 33 
 ```
     sudo_users = {
     267785153,
