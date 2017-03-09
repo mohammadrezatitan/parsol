@@ -310,7 +310,6 @@ end
 if matches[1] == "دستورات فان" then
 local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
-if not lang then
 helpfun = [[
 
 *ساعت*
@@ -352,8 +351,6 @@ _مثال:_
 سازنده :@mohammadrezajiji
 ]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, helpfun, 1, 'md')
-end
-
 end
 end
 --------------------------------

@@ -1164,7 +1164,7 @@ return tdcli.sendMessage(msg.to.id, msg.id, 1, _config.info_text, 1, 'html')
 if matches[1] == 'adminlist' and is_admin(msg) then
 return adminlist(msg)
     end
-     if matches[1] == 'leave' and is_admin(msg) then
+     if matches[1] == 'ترک' and is_admin(msg) then
   tdcli.changeChatMemberStatus(msg.to.id, our_id, 'Left', dl_cb, nil)
    end
      if matches[1] == 'autoleave' and is_admin(msg) then
@@ -1194,10 +1194,13 @@ text = [[
 🔹اضافه کرده گروه به پنل مدریت
 
 *حذف* 
-🔹حذف گروه از پنل مدیریتی_
+🔹حذف گروه از پنل مدیریتی
 
 *ترک* 
 🔹خارج شدن ربات از گروه
+
+*بارگزاری مجدد*
+🔹بارگزاری مجدد همه پلاگین ها
 
 *!visudo* `[username|id|reply]`
 🔹اضافه کردن سودو
