@@ -2387,7 +2387,6 @@ local settings = data[tostring(target)]["settings"]
 end
 return text
 end
-
 local function run(msg, matches)
 local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
@@ -3059,7 +3058,6 @@ end
 end
 
 if matches[1] == "راهنما" and is_mod(msg) then
-if not lang then
 text = [[
 *📜Help of 🛡titan🛡 tg*
 #Titantg🏷
