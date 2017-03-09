@@ -4,13 +4,13 @@
 
 * * *
 
-## دستورات
+### دستورات
 
 | راهنما | , ...
 
 * * *
 
-# نصب ربات
+#` نصب ربات`
 روش اول
 ```sh
 cd $HOME
@@ -20,7 +20,7 @@ chmod +x parsol.sh
 ./parsol.sh install
 ./parsol.sh # Enter a phone number & confirmation code.
 ```
-### نصب ربات
+### `نصب ربات`
 روش دوم کد یک پارچه
 ```sh
 cd $HOME && git clone https://github.com/mohammadrezatitan/parsol.git && cd parsol && chmod +x parsol.sh && ./parsol.sh install && ./parsol.sh
