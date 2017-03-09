@@ -7,7 +7,7 @@ end
 local function run(msg, matches)
     local chat_id = msg.chat_id_
     local msg_id = msg.id_
-    if matches[1] == 'rmsg' then
+    if matches[1] == 'پاک کردن' then
         if tostring(chat_id):match("^-100") then 
             if is_owner(msg) then
                 if tonumber(matches[2]) > 100 or tonumber(matches[2]) < 1 then
