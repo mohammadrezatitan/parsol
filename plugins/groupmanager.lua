@@ -2835,7 +2835,7 @@ if matches[1] == 'لینک جدید' and is_mod(msg) then
       end
     return rules
   end
-if matches[1] == "اطلاعات ویزرنیم" and matches[2] and is_mod(msg) then
+if matches[1] == "اطلاعات یوزرنیم" and matches[2] and is_mod(msg) then
     tdcli_function ({
       ID = "SearchPublicChat",
       username_ = matches[2]
