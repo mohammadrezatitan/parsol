@@ -627,7 +627,7 @@ if is_sudo(msg) then
 				tdcli.sendMessage(SUDO, msg.id_, 1, '*Robot left from under group successfully:*\n\n`'..matches[2]..'`', 1,'md')
 			end
 		end
-		if matches[1]:lower() == 'charge' and matches[2] and matches[3] then
+		if matches[1]:lower() == 'شارژ' and matches[2] and matches[3] then
 		if string.match(matches[2], '^-%d+$') then
 			if tonumber(matches[3]) > 0 and tonumber(matches[3]) < 1001 then
 				local extime = (tonumber(matches[3]) * 86400)
@@ -910,7 +910,7 @@ end
 				end
 			end
 		end
-		if matches[1]:lower() == 'check' and is_mod(msg) and not matches[2] then
+		if matches[1]:lower() == 'تاریخ انقضا' and is_mod(msg) and not matches[2] then
 			local expi = redis:ttl('ExpireDate:'..msg.to.id)
 			if expi == -1 then
 				if lang then
@@ -927,7 +927,7 @@ end
 				end
 			end
 		end
-		if matches[1] == 'check' and is_mod(msg) and matches[2] then
+		if matches[1] == 'تاریخ انقضا' and is_mod(msg) and matches[2] then
 		if string.match(matches[2], '^-%d+$') then
 			local expi = redis:ttl('ExpireDate:'..matches[2])
 			if expi == -1 then
@@ -1185,6 +1185,12 @@ text = [[
 *بارگزاری مجدد*
 🔹بارگزاری مجدد همه پلاگین ها
 
+*شارژ* `[تعداد روز]`
+🔹تنظیم تاریخ انقضای گروه		
+
+*تاریخ انقضا*
+🔹اعلام تاریخ انقضای گروه		
+		
 *!visudo* `[username|id|reply]`
 🔹اضافه کردن سودو
 
@@ -1257,17 +1263,13 @@ text = [[
 *!clear cache*
 🔹پاک کردن کش مسیر .telegram-cli/data
 
-*!check*
-🔹اعلام تاریخ انقضای گروه
 
-*!check* `[GroupID]`
+*تاریخ انقضا* `[GroupID]`
 🔹اعلام تاریخ انقضای گروه مورد نظر
 
-*!charge* `[GroupID]` `[Number Of Days]`
+*شارژ* `[GroupID]` `[Number Of Days]`
 🔹تنظیم تاریخ انقضای گروه مورد نظر
 
-*!charge* `[Number Of Days]`
-🔹تنظیم تاریخ انقضای گروه
 
 *!jointo* `[GroupID]`
 🔹دعوت شدن شما توسط ربات به گروه مورد نظر
@@ -1318,10 +1320,10 @@ patterns = {
 "^[!/#](savefile) (.*)$",
 "^[!/#]([Aa]dd)$",
 "^[!/#]([Gg]id)$",
-"^[!/#]([Cc]heck)$",
-"^[!/#]([Cc]heck) (.*)$",
-"^[!/#]([Cc]harge) (.*) (%d+)$",
-"^[!/#]([Cc]harge) (%d+)$",
+"^(تاریخ انقضا)$",
+"^(تاریخ انقضا) (.*)$",
+"^(شارژ) (.*) (%d+)$",
+"^(شارژ) (%d+)$",
 "^[!/#]([Jj]ointo) (.*)$",
 "^[!/#]([Ll]eave) (.*)$",
 "^[!/#]([Pp]lan) ([123]) (.*)$",
