@@ -627,7 +627,7 @@ if is_sudo(msg) then
 				tdcli.sendMessage(SUDO, msg.id_, 1, '*Robot left from under group successfully:*\n\n`'..matches[2]..'`', 1,'md')
 			end
 		end
-		if matches[1]:lower() == 'شارژ' and matches[2] and matches[3] then
+		if matches[1]:lower() == 'charge' and matches[2] and matches[3] then
 		if string.match(matches[2], '^-%d+$') then
 			if tonumber(matches[3]) > 0 and tonumber(matches[3]) < 1001 then
 				local extime = (tonumber(matches[3]) * 86400)
@@ -888,7 +888,7 @@ end
         end
     end
 	if msg.to.type == 'channel' or msg.to.type == 'chat' then
-		if matches[1] == 'charge' and matches[2] and not matches[3] and is_sudo(msg) then
+		if matches[1] == 'شارژ' and matches[2] and not matches[3] and is_sudo(msg) then
 			if tonumber(matches[2]) > 0 and tonumber(matches[2]) < 1001 then
 				local extime = (tonumber(matches[2]) * 86400)
 				redis:setex('ExpireDate:'..msg.to.id, extime, true)
