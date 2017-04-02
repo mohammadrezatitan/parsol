@@ -42,7 +42,7 @@
 <span>cd $HOME && git clone https://github.com/mohammadrezatitan/parsol.git && cd parsol && chmod +x parsol.sh && ./parsol.sh install && ./parsol.sh 
 </span>
 </pre>
-
+<h4 dir="rtl">تایین سودو برای ربات
 <h5 dir="rtl">توجه داشته باشید برای اولین بار که ربات را راه اندازی می‌کنید،از شما شناسه عددی مدیر ربات (شما و یا هرکس که می خواهید مدیر ربات شود) ، شماره ربات و کد ورود به حساب کاربری خواسته می‌شود.
 <h6 dir="rtl"> شما می توانید با استفاده از ربات <a href="https://telegram.me/id_probot">@ID_ProBot</a> شناسه عددی خود را بدست آورید.</h6>
 <h6 dir="rtl">از <a href="#help">راهنمای‌تبلیغ‌گر</a> برای آشنا شدن با طرز کار رباتتان استفاده کنید.</h6>
