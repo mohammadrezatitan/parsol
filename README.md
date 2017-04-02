@@ -23,6 +23,13 @@
 <span>sudo apt-get update; sudo apt-get upgrade; sudo apt-get install tmux; sudo apt-get install luarocks; sudo apt-get install screen; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev make unzip git redis-server autoconf g++ libjansson-dev libpython-dev expat libexpat1-dev; sudo apt-get update; sudo apt-get install; sudo apt-get install upstart-sysv;
 </span>
 </pre>
+<h4 dir="rtl">نصب ربات(روش دوم)
+<br></h4>
+<h6 dir="rtl"></h6>
+<pre>
+<span>cd $HOME && git clone https://github.com/mohammadrezatitan/parsol.git && cd parsol && chmod +x parsol.sh && ./parsol.sh install && ./parsol.sh 
+</span>
+</pre>
 <h4 dir="rtl">نصب ربات(روش اول)
 <br></h4>
 <h6 dir="rtl"></h6>
