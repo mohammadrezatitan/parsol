@@ -23,16 +23,15 @@
 <span>sudo apt-get update; sudo apt-get upgrade; sudo apt-get install tmux; sudo apt-get install luarocks; sudo apt-get install screen; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev make unzip git redis-server autoconf g++ libjansson-dev libpython-dev expat libexpat1-dev; sudo apt-get update; sudo apt-get install; sudo apt-get install upstart-sysv;
 </span>
 </pre>
-<h4 dir="rtl">حال با توجه به شناسه ای که برای ربات جدید داده شده تبلیغ‌گر خود را راه‌اندازی کنید.
-<br>مثال:</h4>
-<h6 dir="rtl">در صورتی ک ردیس تنظیم نشده است آن را تنظیم کنید.</h6>
+<h4 dir="rtl">نصب ربات(روش اول)
+<br></h4>
+<h6 dir="rtl"></h6>
 <pre>
-<span>دستوری برای راه اندازی مجدد ردیس#</span>
-<span>sudo service redis-server restart</span>
-<span>دستوری برای راه اندازی ردیس#</span>
-<span>sudo service redis-server start</span>
-<span></span>
-<span>./bot 1</span>
+<span>cd $HOME</span>
+<span>git clone https://github.com/mohammadrezatitan/parsol.git</span>
+<span>cd parsol</span>
+<span>chmod +x parsol.sh</span>
+<span>./parsol.sh install</span>
 </pre>
 <h5 dir="rtl">توجه داشته باشید برای اولین بار که ربات را راه اندازی می‌کنید،از شما شناسه عددی مدیر ربات (شما و یا هرکس که می خواهید مدیر ربات شود) ، شماره ربات و کد ورود به حساب کاربری خواسته می‌شود.
 <h6 dir="rtl"> شما می توانید با استفاده از ربات <a href="https://telegram.me/id_probot">@ID_ProBot</a> شناسه عددی خود را بدست آورید.</h6>
