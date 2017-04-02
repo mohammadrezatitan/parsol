@@ -49,7 +49,7 @@ screen ./parsol.sh
 ```
 * * *
 ###`لانچ خودکار`
-ابتدا یک توکن از{@botfather} {@botfather}  دریافت کنید و در فایل auto.sh به جای عبارت [token] قرار دهید سپس کد های زیر را وارد کنید
+ دریافت کنید سپس توکن را درون `@botfather`ابتدا یک توکن را   
 ```
 cd parsol
 chmod +x ./auto.sh
