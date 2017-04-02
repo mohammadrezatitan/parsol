@@ -8,7 +8,7 @@
         <img src="http://upir.ir/951/guest/Untitled-6.png" width="150">
     </a>
 </div>
-<font size="10"><a href="https://telegram.me/titanteams">parsol.v3</a></font>
+<font size="100"><a href="https://telegram.me/titanteams">parsol.v3</a></font>
 <h3><p dir="rtl">سورسی کاملا فارسی در زمینه تیجی های جدید :)
 <a href="https://telegram.me/i_naji">ناجی</a> برپایه اخرین نسخه <a href="https://valtman.name/telegram-cli">تلگرام</a>.
 <br>
