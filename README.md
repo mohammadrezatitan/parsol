@@ -60,4 +60,11 @@
 <span>cd parsol</span>
 <span>screen ./parsol.sh</span>
 </pre>
-
+<h5 dir="rtl">اتولانچ (بدون خاموشی)
+<pre>
+cd parsol
+chmod +x ./auto.sh
+screen ./auto.sh
+</pre>
+</P>
+sfeesfs
