@@ -1,4 +1,4 @@
-<p align="center"> <img src="http://www.pic98.ir/upload/bniu_untitled-3.png" width="240">
+<p align="center"> <img src="http://s8.picofile.com/file/8290925684/photo_2017_04_01_19_33_42.jpg" width="240">
 <h1><p align="center">تبلیغ‌گر
 <h2><p align="center">سرعت 💠 دقت 💠 قدرت
 <div align="center">
