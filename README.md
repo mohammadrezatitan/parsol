@@ -60,29 +60,15 @@
 <span>cd parsol</span>
 <span>screen ./parsol.sh</span>
 </pre>
-<h5 dir="rtl">اتولانچ (بدون خاموشی)
+<h5 dir="rtl">fhthtf
 <pre>
 cd parsol
 chmod +x ./auto.sh
 screen ./auto.sh
 </pre>
 </P>
-### `لانچ`
-```
-killall screen
-killall .telegram-cli
-cd parsol
-screen ./parsol.sh
 
-```
-* * *
-###`لانچ خودکار`
- دریافت کنید سپس توکن را درون `@botfather`ابتدا یک توکن را   
-```
-cd parsol
-chmod +x ./auto.sh
-screen ./auto.sh
-```
+
 اموزش های بیش ار در کانال
 
 # [mohammadrezajiji](https://telegram.me/mohammadrezajiji)
