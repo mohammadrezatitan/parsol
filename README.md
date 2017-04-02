@@ -1,75 +1,49 @@
-# [parsol v.2](https://telegram.me/titantims)
+<p align="center"> <img src="http://www.pic98.ir/upload/bniu_untitled-3.png" width="240">
+<h1><p align="center">تبلیغ‌گر
+<h2><p align="center">سرعت 💠 دقت 💠 قدرت
+<div align="center">
+    <a href="https://telegram.me/Naji_MessengerRobot">
+        <img src="http://upir.ir/951/guest/Untitled-5.png" hspace="10" width="150">
+    </a>
+    <a href="https://telegram.me/i_advansitor">
+        <img src="http://upir.ir/951/guest/Untitled-7.png" hspace="10" width="150">
+    </a>
+    <a href="https://telegram.me/i_naji">
+        <img src="http://upir.ir/951/guest/Untitled-6.png" width="150">
+    </a>
+</div>
 
-`سورسی کاملا فارسی در زمینه تیجی های جدید :)`
-
-* * *
-
-### دستورات
-
-*| راهنما | , ...*
-
-* * *
-`درصورتی که سرور شما رایگان است یا خام است بهتر است ابتدا کد اماده سازی سرور رو بزنید`
-```
-sudo apt-get update; sudo apt-get upgrade; sudo apt-get install tmux; sudo apt-get install luarocks; sudo apt-get install screen; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev make unzip git redis-server autoconf g++ libjansson-dev libpython-dev expat libexpat1-dev; sudo apt-get update; sudo apt-get install; sudo apt-get install upstart-sysv;
-```
-#` نصب ربات`
-*روش اول*
-```sh
-cd $HOME
-git clone https://github.com/mohammadrezatitan/parsol.git
-cd parsol
-chmod +x parsol.sh
-./parsol.sh install
-./parsol.sh # Enter a phone number & confirmation code.
-```
-### `نصب ربات`
-*روش دوم کد یک پارچه*
-```sh
-cd $HOME && git clone https://github.com/mohammadrezatitan/parsol.git && cd parsol && chmod +x parsol.sh && ./parsol.sh install && ./parsol.sh 
-```
-
-* * *
-
-### `تایین سودو برای ربات`
- قرار بدین سپس کد لانچ را وارد کنید  `tools`  خط 2   `plugins` همچنین در پوشیه  `data` در پوشه `config` ایدی عددی خودتون رو پس از نصب در خط 24 
-```
-    sudo_users = {
-    267785153,
-    YourID
-  }
-```
-### `لانچ`
-```
-killall screen
-killall .telegram-cli
-cd parsol
-screen ./parsol.sh
-
-```
-* * *
-###`لانچ خودکار`
- دریافت کنید سپس توکن را درون `@botfather`ابتدا یک توکن را   
-```
-cd parsol
-chmod +x ./auto.sh
-screen ./auto.sh
-```
-اموزش های بیش ار در کانال
-
-# [mohammadrezajiji](https://telegram.me/mohammadrezajiji)
-
-
-###  Telegram channel:
-
-# [titanteam](https://telegram.me/titantims)
-
-### thanks to   
-
-# [beyondteam](https://telegram.me/BeyondTeam)
-
-# [luaerror](https://telegram.me/luaerror)
-
-* * *
-》*Please send us your stars☆ at the top of this page*
-
+<h3><p dir="rtl">تبلیغ‌گر رباتی هوشمند, بسیار ساده و البته رایگان جهت امور تبلیغاتی در تلگرام است.<br>
+نوشته شده توسط <a href="https://telegram.me/i_naji">ناجی</a> برپایه اخرین نسخه <a href="https://valtman.name/telegram-cli">تلگرام</a>.
+<br>
+<h3 align="right"> <strong> نصب و راه‌اندازی</strong> 🚀
+</h3>
+<hr>
+<h4 dir="rtl">ابتدا سورس <em>ربات تبلیغ‌گر</em> را کپی کرده و پیش‌زمینه‌ها را نصب کنید.</h4>
+<h6>(موارد زیر را در ترمینال وارد کنید)</h6>
+<pre>
+<span>git clone https://github.com/i-naji/tabchi.git -b persian</span>
+<span>cd tabchi</span>
+<span>chmod +x bot</span>
+<span>./bot install</span>
+</pre>
+<h4 dir="rtl"> برای ساخت ربات جدید <strong>bot create/.</strong> را وارد کنید.
+</h4>
+<pre>
+<span>./bot create</span>
+</pre>
+<h4 dir="rtl">حال با توجه به شناسه ای که برای ربات جدید داده شده تبلیغ‌گر خود را راه‌اندازی کنید.
+<br>مثال:</h4>
+<h6 dir="rtl">در صورتی ک ردیس تنظیم نشده است آن را تنظیم کنید.</h6>
+<pre>
+<span>دستوری برای راه اندازی مجدد ردیس#</span>
+<span>sudo service redis-server restart</span>
+<span>دستوری برای راه اندازی ردیس#</span>
+<span>sudo service redis-server start</span>
+<span></span>
+<span>./bot 1</span>
+</pre>
+<h5 dir="rtl">توجه داشته باشید برای اولین بار که ربات را راه اندازی می‌کنید،از شما شناسه عددی مدیر ربات (شما و یا هرکس که می خواهید مدیر ربات شود) ، شماره ربات و کد ورود به حساب کاربری خواسته می‌شود.
+<h6 dir="rtl"> شما می توانید با استفاده از ربات <a href="https://telegram.me/id_probot">@ID_ProBot</a> شناسه عددی خود را بدست آورید.</h6>
+<h6 dir="rtl">از <a href="#help">راهنمای‌تبلیغ‌گر</a> برای آشنا شدن با طرز کار رباتتان استفاده کنید.</h6>
+<br>
