@@ -15,7 +15,7 @@
 <hr>
 <h4 dir="rtl">دستورات</h4>
 <h6>| راهنما | , ...</h6>
-<pre>
+
 <span>git clone https://github.com/i-naji/tabchi.git -b persian</span>
 <span>cd tabchi</span>
 <span>chmod +x bot</span>
