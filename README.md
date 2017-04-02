@@ -60,7 +60,7 @@
 <span>cd parsol</span>
 <span>screen ./parsol.sh</span>
 </pre>
-<h5 dir="rtl">fhthtf
+<h5 dir="rtl">اتولانچ (بدون خاموشی)
 <pre>
 cd parsol
 chmod +x ./auto.sh
@@ -69,7 +69,7 @@ screen ./auto.sh
 </P>
 
 
-اموزش های بیش ار در کانال
+اموزش های بیش تر در کانال
 
 # [mohammadrezajiji](https://telegram.me/mohammadrezajiji)
 
