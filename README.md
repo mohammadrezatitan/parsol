@@ -1,6 +1,6 @@
 <p align="center"> <img src="http://s8.picofile.com/file/8290925684/photo_2017_04_01_19_33_42.jpg" width="240">
     </a>
-    </a>
+    <div align="center">
     <a href="https://telegram.me/titanteams">
         <img src="http://upir.ir/951/guest/Untitled-7.png" hspace="10" width="150">
     </a>
