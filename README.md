@@ -48,7 +48,14 @@ screen ./parsol.sh
 
 ```
 * * *
-
+###`لانچ خودکار`
+ابتدا یک توکن از @botfather دریافت کنید و در فایل auto.sh به جای عبارت [token] قرار دهید سپس کد های زیر را وارد کنید
+```
+cd parsol
+chmod +x ./auto.sh
+screen ./auto.sh
+```
+اموزش های بیش ار در کانال
 
 # [mohammadrezajiji](https://telegram.me/mohammadrezajiji)
 
