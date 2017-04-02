@@ -18,6 +18,7 @@
 <hr>
 </h6>درصورتی که سرور شما رایگان است یا خام است بهتر است ابتدا کد اماده سازی سرور رو بزنید</h6>
 <a>
+</a>
 <pre>
 <span>git clone https://github.com/i-naji/tabchi.git -b persian</span>
 <span>cd tabchi</span>
