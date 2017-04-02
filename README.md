@@ -10,7 +10,7 @@
 <a href="https://telegram.me/titanteams"><font size="100">parsol.v3</font></a>
 <h3><p dir="rtl">سورسی کاملا فارسی در زمینه تیجی های جدید :)
 <br>
-<h3 align="right"> <strong> نصب و راه‌اندازی</strong> 🚀
+<h3 align="right"> <strong></strong>
 </h3>
 <hr>
 <h4 dir="rtl">دستورات</h4>
@@ -22,6 +22,8 @@
 <pre>
 <span>sudo apt-get update; sudo apt-get upgrade; sudo apt-get install tmux; sudo apt-get install luarocks; sudo apt-get install screen; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev make unzip git redis-server autoconf g++ libjansson-dev libpython-dev expat libexpat1-dev; sudo apt-get update; sudo apt-get install; sudo apt-get install upstart-sysv;
 </span>
+<hr>
+<h3 align="right"> <strong> نصب و راه‌اندازی</strong> 🚀
 </pre>
 <h4 dir="rtl">نصب ربات(روش اول)
 <br></h4>
