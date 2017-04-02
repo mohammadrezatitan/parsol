@@ -53,5 +53,11 @@
     </pre>
 <hr>
 <h4 dir="rtl">🔃لانچ و راه اندازی
-
-
+<h6 dir="rtl">لانچ
+<pre>
+killall screen
+killall .telegram-cli
+cd parsol
+screen ./parsol.sh
+</pre>
+<h4 dir="rtl"> 
