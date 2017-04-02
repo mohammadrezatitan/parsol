@@ -24,7 +24,7 @@
 <span>chmod +x bot</span>
 <span>./bot install</span>
 </pre>
-<h4 dir="rtl"> برای ساخت ربات جدید <strong>bot create/.</strong> را وارد کنید.
+<h4 dir="rtl"> رصورتی که سرور شما رایگان است یا خام است بهتر است ابتدا کد اماده سازی سرور رو بزنید < .
 </h4>
 <pre>
 <span>./bot create</span>
