@@ -1,20 +1,16 @@
 <p align="center"> <img src="http://s8.picofile.com/file/8290925684/photo_2017_04_01_19_33_42.jpg" width="240">
-<h1><p align="center">تبلیغ‌گر
-<h2><p align="center">سرعت 💠 دقت 💠 قدرت
-<div align="center">
-    <a href="https://telegram.me/Naji_MessengerRobot">
-        <img src="http://upir.ir/951/guest/Untitled-5.png" hspace="10" width="150">
     </a>
-    <a href="https://telegram.me/i_advansitor">
+    <a href="https://telegram.me/titanteams">
         <img src="http://upir.ir/951/guest/Untitled-7.png" hspace="10" width="150">
     </a>
-    <a href="https://telegram.me/i_naji">
+    <a href="https://telegram.me/mohammadrezajiji">
         <img src="http://upir.ir/951/guest/Untitled-6.png" width="150">
     </a>
 </div>
+# [parsol v.2](https://telegram.me/titantims)
 
-<h3><p dir="rtl">تبلیغ‌گر رباتی هوشمند, بسیار ساده و البته رایگان جهت امور تبلیغاتی در تلگرام است.<br>
-نوشته شده توسط <a href="https://telegram.me/i_naji">ناجی</a> برپایه اخرین نسخه <a href="https://valtman.name/telegram-cli">تلگرام</a>.
+<h3><p dir="rtl">`سورسی کاملا فارسی در زمینه تیجی های جدید :)`
+<a href="https://telegram.me/i_naji">ناجی</a> برپایه اخرین نسخه <a href="https://valtman.name/telegram-cli">تلگرام</a>.
 <br>
 <h3 align="right"> <strong> نصب و راه‌اندازی</strong> 🚀
 </h3>
