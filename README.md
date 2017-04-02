@@ -52,7 +52,7 @@
     YourID
     </pre>
 <hr>
-<h4 dir="rtl">🔃لانچ و راه اندازی
+<h4 dir="rtl">🔃 لانچ و راه اندازی
 <h6 dir="rtl">لانچ
 <pre>
 <span>killall screen</span>
@@ -77,7 +77,7 @@ screen ./auto.sh
 
 ###  Telegram channel:
 
-# [titanteam](https://telegram.me/titantims)
+# [Titanteam](https://telegram.me/titantims)
 
 ### thanks to   
 
