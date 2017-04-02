@@ -16,15 +16,8 @@
 <h4 dir="rtl">دستورات</h4>
 <h6>| راهنما | , ...</h6>
 <hr>
-</h6 dir="rtl">درصورتی که سرور شما رایگان است یا خام است بهتر است ابتدا کد اماده سازی سرور رو بزنید</h6>
-
-<pre>
-<span>git clone https://github.com/i-naji/tabchi.git -b persian</span>
-<span>cd tabchi</span>
-<span>chmod +x bot</span>
-<span>./bot install</span>
 </pre>
-<h4 dir="rtl"> رصورتی که سرور شما رایگان است یا خام است بهتر است ابتدا کد اماده سازی سرور رو بزنید < .
+<h4 dir="rtl"> درصورتی که سرور شما رایگان است یا خام است بهتر است ابتدا کد اماده سازی سرور رو وارد کنید 
 </h4>
 <pre>
 <span>./bot create</span>
