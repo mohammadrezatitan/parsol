@@ -128,6 +128,11 @@ end
   else
     emoji = 'no'
   end
+      if settings.tab then
+    tab = settings.tab
+  else
+    tab = 'no'
+  end
   if settings.lock_pin then
     lock_pin = settings.lock_pin
   else
@@ -349,6 +354,14 @@ if ads_caption and ads == "yes" then
 kick_user(user, chat)
    end
 end
+local tab_caption = msg.media.caption:match("ادی")or msg.media.caption:match("[Aa]di")or msg.media.caption:match("[Aa]dd")or msg.media.caption:match("اددی")or msg.media.caption:match("[Aa]ddi")
+if tab_caption and tab == "yes" then
+ if is_channel then
+ del_msg(chat, tonumber(msg.id))
+  elseif is_chat then
+kick_user(user, chat)
+   end
+end
 
 local english_caption = msg.media.caption:match("[ASDFGHJKLQWERTYUIOPZXCVBNMasdfghjklqwertyuiopzxcvbnm]")
 if english_caption and english == "yes" then
@@ -431,6 +444,15 @@ end
 
 local fosh_msg = msg.text:match("کص")or msg.text:match("کون")or msg.text:match("ممه")or msg.text:match("کیری")or msg.text:match("حرومی")or msg.text:match("ننه") or msg.text:match("کصده")or msg.text:match("کث")or msg.text:match("کسکش")or msg.text:match("کصکش")or msg.text:match("لاشی")or msg.text:match("ناموس")or msg.text:match("جنده")or msg.text:match("یتیم")or msg.text:match("خارکسده")or msg.text:match("مادرجنده")or msg.text:match("حرومزاده")or msg.text:match("خواهرجنده")or msg.text:match("خواهرتو")or msg.text:match("مادرتو")or msg.text:match("کونی")or msg.text:match("اوبی")or msg.text:match("لاشی")or msg.text:match("kir")or msg.text:match("kos")or msg.text:match("lashi")
 if fosh_msg and fosh == "yes" then
+ if is_channel then
+ del_msg(chat, tonumber(msg.id))
+  elseif is_chat then
+kick_user(user, chat)
+   end
+end
+
+local tab_msg =msg.text:match("[aA]dd") or msg.text:match("ادی") or msg.text:match("[Aa]di")  or msg.text:match("اددی") or msg.text:match("[aA]d") or msg.text:match("[Aa]dii") or msg.text:match("اددی")
+if tab_msg and tab == "yes" then
  if is_channel then
  del_msg(chat, tonumber(msg.id))
   elseif is_chat then

@@ -1221,6 +1221,250 @@ return "☆》سنجاق کردن پیام در گروه آزاد شد🔓"
 end
 end
 end
+local function lock_fosh(msg, data, target) 
+local hash = "gp_lang:"..msg.to.id
+local lang = redis:get(hash)
+if not is_mod(msg) then
+if not lang then
+ return "#》*Yσυ αяє ησт вσт α∂мιη*🚷"
+else
+ return "#》_شما مدیر ربات نیستید_🚷"
+end
+end
+
+local lock_fosh = data[tostring(target)]["settings"]["fosh"] 
+if lock_fosh == "yes" then
+if not lang then
+ return "☆》*Fosh* _Posting Is Already Locked_🔒"
+elseif lang then
+ return "☆》ارسال کلمات رکیک در گروه از قبل ممنوع است🔒"
+end
+else
+ data[tostring(target)]["settings"]["fosh"] = "yes"
+save_data(_config.moderation.data, data) 
+if not lang then
+ return "☆》*Fσѕн* _Pσѕтιηg Hαѕ Bєєη Lσcкє∂_🔒"
+else
+ return "☆》ارسال کلمات رکیک در گروه ممنوع شد🔒"
+end
+end
+end
+
+local function unlock_fosh(msg, data, target)
+local hash = "gp_lang:"..msg.to.id
+local lang = redis:get(hash)
+ if not is_mod(msg) then
+if not lang then
+return "#》*Yσυ αяє ησт вσт α∂мιη*🚷"
+else
+ return "#》_شما مدیر ربات نیستید_🚷"
+end 
+end
+
+local lock_fosh = data[tostring(target)]["settings"]["english"]
+ if lock_fosh == "no" then
+if not lang then
+return "☆》*Fσѕн* _Pσѕтιηg Iѕ Nσт Lσcкє∂_🔓" 
+elseif lang then
+return "☆》ارسال کلمات رکیک در گروه ممنوع نمیباشد🔓"
+end
+else 
+data[tostring(target)]["settings"]["fosh"] = "no" save_data(_config.moderation.data, data) 
+if not lang then
+return "☆》*Fσѕн* _Pσѕтιηg Hαѕ Bєєη Uηℓσcкє∂_🔓" 
+else
+return "☆》ارسال کلمات رکیک در گروه آزاد شد🔓"
+end
+end
+local lock_pin = data[tostring(target)]["settings"]["lock_pin"]
+ if lock_pin == "no" then
+if not lang then
+return "☆》*fosh Mєѕѕαgє* _Iѕ Nσт Lσcкє∂_🔓" 
+elseif lang then
+return "☆》ارسال پیام #رکیک در گروه ممنوع نمیباشد🔓"
+end
+else 
+data[tostring(target)]["settings"]["lock_pin"] = "no"
+save_data(_config.moderation.data, data) 
+if not lang then
+return "☆》*fosh Mєѕѕαgє* _Hαѕ Bєєη Uηℓσcкє∂_🔓" 
+else
+return "☆》ارسال پیام #رکیک در گروه آزاد شد🔓"
+end
+end
+end
+---------------Lock Ads-------------------
+local function lock_ads(msg, data, target) 
+local hash = "gp_lang:"..msg.to.id
+local lang = redis:get(hash)
+if not is_mod(msg) then
+if not lang then
+ return "#》*Yσυ αяє ησт вσт α∂мιη*🚷"
+else
+ return "#》_شما مدیر ربات نیستید_🚷"
+end
+end
+
+local lock_ads = data[tostring(target)]["settings"]["ads"] 
+if lock_ads == "yes" then
+if not lang then
+ return "☆》*A∂ѕ* _Pσѕтιηg Iѕ Aℓяєα∂у Lσcкє∂_🔒"
+elseif lang then
+ return "☆》ارسال تبلیغات در گروه از قبل ممنوع است🔒"
+end
+else
+ data[tostring(target)]["settings"]["ads"] = "yes"
+save_data(_config.moderation.data, data) 
+if not lang then
+ return "☆》*A∂ѕ* _Pσѕтιηg Hαѕ Bєєη Lσcкє∂_🔒"
+else
+ return "☆》ارسال تبلیغات در گروه ممنوع شد🔒"
+end
+end
+end
+
+local function unlock_ads(msg, data, target)
+local hash = "gp_lang:"..msg.to.id
+local lang = redis:get(hash)
+ if not is_mod(msg) then
+if not lang then
+return "#》*Yσυ αяє ησт вσт α∂мιη*🚷"
+else
+ return "#》_شما مدیر ربات نیستید_🚷"
+end 
+end
+
+local lock_ads = data[tostring(target)]["settings"]["ads"]
+ if lock_ads == "no" then
+if not lang then
+return "☆》*α∂ѕ* _Pσѕтιηg Iѕ Nσт Lσcкє∂_🔓" 
+elseif lang then
+return "ارسال تبلیغات در گروه ممنوع نمیباشد🔓"
+end
+else 
+data[tostring(target)]["settings"]["ads"] = "no" save_data(_config.moderation.data, data) 
+if not lang then
+return "☆》*A∂ѕ* _Pσѕтιηg Hαѕ Bєєη Uηℓσcкє∂_🔓" 
+else
+return "☆》ارسال تبلیغات در گروه آزاد شد🔓"
+end
+end
+end
+---------------Lock English-------------------
+local function lock_english(msg, data, target) 
+local hash = "gp_lang:"..msg.to.id
+local lang = redis:get(hash)
+if not is_mod(msg) then
+if not lang then
+ return "#》*Yσυ αяє ησт вσт α∂мιη*🚷"
+else
+ return "#》_شما مدیر ربات نیستید_🚷"
+end
+end
+
+local lock_english = data[tostring(target)]["settings"]["english"] 
+if lock_english == "yes" then
+if not lang then
+ return "☆》*Eηgℓιѕн* _Pσѕтιηg Iѕ Aℓяєα∂у Lσcкє∂_🔒"
+elseif lang then
+ return "☆》نوشته انگلیسی در گروه از قبل ممنوع است🔒"
+end
+else
+ data[tostring(target)]["settings"]["english"] = "yes"
+save_data(_config.moderation.data, data) 
+if not lang then
+ return "☆》*Eηgℓιѕн* _Pσѕтιηg Hαѕ Bєєη Lσcкє∂_🔒"
+else
+ return "☆》نوشته انگلیسی در گروه ممنوع شد🔒"
+end
+end
+end
+
+local function unlock_english(msg, data, target)
+local hash = "gp_lang:"..msg.to.id
+local lang = redis:get(hash)
+ if not is_mod(msg) then
+if not lang then
+return "#》*Yσυ αяє ησт вσт α∂мιη*🚷"
+else
+ return "#》_شما مدیر ربات نیستید_🚷"
+end 
+end
+
+local lock_english = data[tostring(target)]["settings"]["english"]
+ if lock_english == "no" then
+if not lang then
+return "☆》*єηgℓιѕн* _Pσѕтιηg Iѕ Nσт Lσcкє∂_🔓" 
+elseif lang then
+return "☆》نوشته انگلیسی در گروه ممنوع نمیباشد🔓"
+end
+else 
+data[tostring(target)]["settings"]["english"] = "no" save_data(_config.moderation.data, data) 
+if not lang then
+return "☆》*Eηgℓιѕн* _Pσѕтιηg Hαѕ Bєєη Uηℓσcкє∂_🔓" 
+else
+return "☆》نوشته انگلیسی در گروه آزاد شد🔓"
+end
+end
+end
+---------------Lock tab-------------------
+local function lock_tab(msg, data, target) 
+local hash = "gp_lang:"..msg.to.id
+local lang = redis:get(hash)
+if not is_mod(msg) then
+if not lang then
+ return "#》*Yσυ αяє ησт вσт α∂мιη*🚷"
+else
+ return "#》_شما مدیر ربات نیستید_🚷"
+end
+end
+
+local lock_tab = data[tostring(target)]["settings"]["tab"] 
+if lock_tab == "yes" then
+if not lang then
+ return "☆》*Tabchi* _Pσѕтιηg Iѕ Aℓяєα∂у Lσcкє∂_🔒"
+elseif lang then
+ return "☆》ارسال پیام اضافه کردن شماره در گروه از قبل ممنوع است🔒"
+end
+else
+ data[tostring(target)]["settings"]["tab"] = "yes"
+save_data(_config.moderation.data, data) 
+if not lang then
+ return "☆》*tabchi* _Pσѕтιηg Hαѕ Bєєη Lσcкє∂_🔒"
+else
+ return "☆》ارسال پیام اضافه کردن شماره در گروه ممنوع شد🔒"
+end
+end
+end
+
+local function unlock_tab(msg, data, target)
+local hash = "gp_lang:"..msg.to.id
+local lang = redis:get(hash)
+ if not is_mod(msg) then
+if not lang then
+return "#》*Yσυ αяє ησт вσт α∂мιη*🚷"
+else
+ return "#》_شما مدیر ربات نیستید_🚷"
+end 
+end
+
+local lock_tab = data[tostring(target)]["settings"]["tab"]
+ if lock_tab == "no" then
+if not lang then
+return "☆》*tabchi* _Pσѕтιηg Iѕ Nσт Lσcкє∂_🔓" 
+elseif lang then
+return "ارسال پیام اضافه کردن شماره در گروه ممنوع نمیباشد🔓"
+end
+else 
+data[tostring(target)]["settings"]["tab"] = "no" save_data(_config.moderation.data, data) 
+if not lang then
+return "☆》*tabchi* _Pσѕтιηg Hαѕ Bєєη Uηℓσcкє∂_🔓" 
+else
+return "☆》ارسال پیام اضافه کردن شماره در گروه آزاد شد🔓"
+end
+end
+end
+-------emoji------------
 --------Mutes---------
 --------Mute all--------------------------
 local function mute_all(msg, data, target)
@@ -2326,6 +2570,26 @@ if not data[tostring(target)]["settings"]["mute_keyboard"] then
 data[tostring(target)]["settings"]["mute_keyboard"] = "no"
 end
 end
+if data[tostring(target)]["settings"] then    
+if not data[tostring(target)]["settings"]["ads"] then     
+data[tostring(target)]["settings"]["ads"] = "no"    
+end
+end
+if data[tostring(target)]["settings"] then    
+if not data[tostring(target)]["settings"]["fosh"] then      
+data[tostring(target)]["settings"]["fosh"] = "no"   
+end
+end
+if data[tostring(target)]["settings"] then    
+if not data[tostring(target)]["settings"]["english"] then     
+data[tostring(target)]["settings"]["english"] = "no"   
+end
+end
+if data[tostring(target)]["settings"] then    
+if not data[tostring(target)]["settings"]["tab"] then      
+data[tostring(target)]["settings"]["tab"] = "no"   
+end
+end
 if not lang then
   local exp = redis:get("charged:"..msg.chat_id_)
     local day = 86400
@@ -2337,7 +2601,7 @@ if not lang then
        expireen = "☆》_Eχριяє ∂αтє_ : *"..d.."* _day_"
    end
 local settings = data[tostring(target)]["settings"]
- text ="*тıтαивøт*\n*Groυp Seттιɴɢѕ:*\n*___________________________*\n*Group lock List* :\n☆》_Lσcк є∂ιт :_  *"..settings.lock_edit.."*\n☆》_Lσcк ℓιηкѕ :_  *"..settings.lock_link.."*\n☆》_Lσcк тαgѕ :_  *"..settings.lock_tag.."*\n☆》_Lσcк ƒℓσσ∂ :_  *"..settings.flood.."*\n☆》_Lσcк ѕραм :_  *"..settings.lock_spam.."*\n☆》_Lσcк мєηтιση :_  *"..settings.lock_mention.."*\n☆》_Lσcк αяαвιc :_  *"..settings.lock_arabic.."*\n☆》_Lσcк ωєвραgє :_  *"..settings.lock_webpage.."*\n☆》_Lσcк мαяк∂σωη :_  *"..settings.lock_markdown.."*\n☆》_Lσcк ριη мєѕѕαgє :_  *"..settings.lock_pin.."*\n*___________________________*\n☆》_Gяσυρ ωєℓcσмє :_  *"..settings.welcome.."*\n☆》_Bσтѕ ρяσтєcтιση :_  *"..settings.lock_bots.."*\n☆》_Fℓσσ∂ ѕєηѕιтινιту :_  *"..NUM_MSG_MAX.."*\n"..expireen.."\n*___________________________*\n*Group Mute List* : \n☆》_Mυтє αℓℓ : _  *"..settings.mute_all.."*\n☆》_Mυтє gιƒ :_  *"..settings.mute_gif.."*\n☆》_Mυтє тєχт :_  *"..settings.mute_text.."*\n☆》_Mυтє ιηℓιηє :_  *"..settings.mute_inline.."*\n☆》_Mυтє gαмє :_  *"..settings.mute_game.."*\n☆》_Mυтє ρнσтσ :_  *"..settings.mute_photo.."*\n☆》_Mυтє νι∂єσ :_  *"..settings.mute_video.."*\n☆》_Mυтє αυ∂ισ :_  *"..settings.mute_audio.."*\n☆》_Mυтє νσιcє :_  *"..settings.mute_voice.."*\n☆》_Mυтє ѕтιcкєя :_  *"..settings.mute_sticker.."*\n☆》_Mυтє cσηтαcт :_  *"..settings.mute_contact.."*\n☆》_Mυтє ƒσяωαя∂ :_  *"..settings.mute_forward.."*\n☆》_Mυтє ℓσcαтιση :_  *"..settings.mute_location.."*\n☆》_Mυтє ∂σcυмєηт :_  *"..settings.mute_document.."*\n☆》_Mυтє TgSєяνιcє :_  *"..settings.mute_tgservice.."*\n☆》_Mυтє Kєувσαя∂ :_  *"..settings.mute_keyboard.."*\n*___________________________*\n*channel*: @titantims\n_powered by_ :@mohammadrezajiji\n*Group Language* : *EN*"
+ text ="*тıтαивøт*\n*Groυp Seттιɴɢѕ:*\n*___________________________*\n*Group lock List* :\n☆》_Lσcк є∂ιт :_  *"..settings.lock_edit.."*\n☆》_Lσcк ℓιηкѕ :_  *"..settings.lock_link.."*\n☆》_Lσcк тαgѕ :_  *"..settings.lock_tag.."*\n☆》_Lσcк ƒℓσσ∂ :_  *"..settings.flood.."*\n☆》_ℓσcк ƒσѕн :_ *"..settings.fosh.."*\n☆》_Lσcк ѕραм :_  *"..settings.lock_spam.."*\n☆》_Lσcк мєηтιση :_  *"..settings.lock_mention.."*\n☆》_Lσcк αяαвιc :_  *"..settings.lock_arabic.."*\n☆》_ℓσcк єηgℓιѕн :_ *"..settings.english.."*\n☆》_ℓσcк Tαвcнι :_ *"..settings.lock_tab.."*\n☆》_ℓσcк α∂ѕ :_ *"..settings.ads.."*\n☆》_Lσcк ωєвραgє :_  *"..settings.lock_webpage.."*\n☆》_Lσcк мαяк∂σωη :_  *"..settings.lock_markdown.."*\n☆》_Lσcк ριη мєѕѕαgє :_  *"..settings.lock_pin.."*\n*___________________________*\n☆》_Gяσυρ ωєℓcσмє :_  *"..settings.welcome.."*\n☆》_Bσтѕ ρяσтєcтιση :_  *"..settings.lock_bots.."*\n☆》_Fℓσσ∂ ѕєηѕιтινιту :_  *"..NUM_MSG_MAX.."*\n"..expireen.."\n*___________________________*\n*Group Mute List* : \n☆》_Mυтє αℓℓ : _  *"..settings.mute_all.."*\n☆》_Mυтє gιƒ :_  *"..settings.mute_gif.."*\n☆》_Mυтє тєχт :_  *"..settings.mute_text.."*\n☆》_Mυтє ιηℓιηє :_  *"..settings.mute_inline.."*\n☆》_Mυтє gαмє :_  *"..settings.mute_game.."*\n☆》_Mυтє ρнσтσ :_  *"..settings.mute_photo.."*\n☆》_Mυтє νι∂єσ :_  *"..settings.mute_video.."*\n☆》_Mυтє αυ∂ισ :_  *"..settings.mute_audio.."*\n☆》_Mυтє νσιcє :_  *"..settings.mute_voice.."*\n☆》_Mυтє ѕтιcкєя :_  *"..settings.mute_sticker.."*\n☆》_Mυтє cσηтαcт :_  *"..settings.mute_contact.."*\n☆》_Mυтє ƒσяωαя∂ :_  *"..settings.mute_forward.."*\n☆》_Mυтє ℓσcαтιση :_  *"..settings.mute_location.."*\n☆》_Mυтє ∂σcυмєηт :_  *"..settings.mute_document.."*\n☆》_Mυтє TgSєяνιcє :_  *"..settings.mute_tgservice.."*\n☆》_Mυтє Kєувσαя∂ :_  *"..settings.mute_keyboard.."*\n*___________________________*\n*channel*: @titantims\n_powered by_ :@mohammadrezajiji\n*Group Language* : *EN*"
 else
  local exp = redis:get("charged:"..msg.chat_id_)
     local day = 86400
@@ -2349,7 +2613,7 @@ else
        expirefa = "➕_تاریخ انقضا_ : *"..d.."* _روز_"
    end
 local settings = data[tostring(target)]["settings"]
- text = "*تیــتاטּ بوت*\n*تنظیـــᓄـات گروهــ:*\n*___________________________*\n لیــست ᓆــᓅـل هــا :\n🔒_قفل_ #ویرایش #پیام : *"..settings.lock_edit.."*\n_🔒قفل_ #لینک : *"..settings.lock_link.."*\n_🔒قفل_ #تگ : *"..settings.lock_tag.."*\n_🔒قفل_ #پیام #مکرر : *"..settings.flood.."*\n_🔒قفل_ #هرزنامه : *"..settings.lock_spam.."*\n_🔒قفل_ #فراخوانی : *"..settings.lock_mention.."*\n_🔒قفل_ #عربی : *"..settings.lock_arabic.."*\n_🔒قفل_ #صفحات #وب : *"..settings.lock_webpage.."*\n_🔒قفل_ #فونت : *"..settings.lock_markdown.."*\n_🔒قفل_ #سنجاق #کردن : *"..settings.lock_pin.."*\n*___________________________*\n_➕پیام خوشآمد گویی :_ *"..settings.welcome.."*\n_➕محافظت در برابر ربات ها :_ *"..settings.lock_bots.."*\n_➕حداکثر پیام مکرر :_ *"..NUM_MSG_MAX.."*\n"..expirefa.."\n*___________________________*\n *لیــست بیــصـבا هــا*:\n_🔇بیصدا_ همه :  *"..settings.mute_all.."*\n_🔇بیصدا_ #تصاویر #متحرک : *"..settings.mute_gif.."*\n_🔇بیصدا_ #متن : *"..settings.mute_text.."*\n_🔇بیصدا_ #کیبورد #شیشه #ای : *"..settings.mute_inline.."*\n_🔇بیصدا_ #بازی #تحت #وب : *"..settings.mute_game.."*\n_🔇بیصدا_ #عکس : *"..settings.mute_photo.."*\n_🔇بیصدا_ #فیلم : *"..settings.mute_video.."*\n_🔇بیصدا_ #آهنگ : *"..settings.mute_audio.."*\n_🔇بیصدا_ #وویس : *"..settings.mute_voice.."*\n_🔇بیصدا_ #برچسب : *"..settings.mute_sticker.."*\n_🔇بیصدا_ #ارسال #مخاطب : *"..settings.mute_contact.."*\n_🔇بیصدا_ #نقل #قول : *"..settings.mute_forward.."*\n_🔇بیصدا_ #موقعیت : *"..settings.mute_location.."*\n_🔇بیصدا_ #اسناد : *"..settings.mute_document.."*\n_🔇بیصدا_ #خدمات #تلگرام : *"..settings.mute_tgservice.."*\n_🔇بیصدا_ #صفحه #کلید : *"..settings.mute_keyboard.."*\n*___________________________*\n ڪانال ᓄا: @titantims\n ساختهـ شـבهـ توسط : @mohammadrezajiji\n_زبان سوپرگروه_ : *FA*"
+ text = "*تیــتاטּ بوت*\n*تنظیـــᓄـات گروهــ:*\n*___________________________*\n لیــست ᓆــᓅـل هــا :\n🔒_قفل_ #ویرایش #پیام : *"..settings.lock_edit.."*\n_🔒قفل_ #لینک : *"..settings.lock_link.."*\n_🔒قفل_ #تگ : *"..settings.lock_tag.."*\n_🔒قفل_ #پیام #مکرر : *"..settings.flood.."*\n_🔒قفل_ #فحش : *"..settings.fosh.."*\n_🔒قفل_ #هرزنامه : *"..settings.lock_spam.."*\n_🔒قفل_ #فراخوانی : *"..settings.lock_mention.."*\n_🔒قفل_ #عربی : *"..settings.lock_arabic.."*\n_🔒قفل_ #انگلیسی : *"..settings.english.."*\n_🔒قفل_ #تبچی : *"..settings.lock_tab.."*\n_🔒قفل_ #تبلیغات : *"..settings.ads.."*\n_🔒قفل_ #صفحات #وب : *"..settings.lock_webpage.."*\n_🔒قفل_ #فونت : *"..settings.lock_markdown.."*\n_🔒قفل_ #سنجاق #کردن : *"..settings.lock_pin.."*\n*___________________________*\n_➕پیام خوشآمد گویی :_ *"..settings.welcome.."*\n_➕محافظت در برابر ربات ها :_ *"..settings.lock_bots.."*\n_➕حداکثر پیام مکرر :_ *"..NUM_MSG_MAX.."*\n"..expirefa.."\n*___________________________*\n *لیــست بیــصـבا هــا*:\n_🔇بیصدا_ همه :  *"..settings.mute_all.."*\n_🔇بیصدا_ #تصاویر #متحرک : *"..settings.mute_gif.."*\n_🔇بیصدا_ #متن : *"..settings.mute_text.."*\n_🔇بیصدا_ #کیبورد #شیشه #ای : *"..settings.mute_inline.."*\n_🔇بیصدا_ #بازی #تحت #وب : *"..settings.mute_game.."*\n_🔇بیصدا_ #عکس : *"..settings.mute_photo.."*\n_🔇بیصدا_ #فیلم : *"..settings.mute_video.."*\n_🔇بیصدا_ #آهنگ : *"..settings.mute_audio.."*\n_🔇بیصدا_ #وویس : *"..settings.mute_voice.."*\n_🔇بیصدا_ #برچسب : *"..settings.mute_sticker.."*\n_🔇بیصدا_ #ارسال #مخاطب : *"..settings.mute_contact.."*\n_🔇بیصدا_ #نقل #قول : *"..settings.mute_forward.."*\n_🔇بیصدا_ #موقعیت : *"..settings.mute_location.."*\n_🔇بیصدا_ #اسناد : *"..settings.mute_document.."*\n_🔇بیصدا_ #خدمات #تلگرام : *"..settings.mute_tgservice.."*\n_🔇بیصدا_ #صفحه #کلید : *"..settings.mute_keyboard.."*\n*___________________________*\n ڪانال ᓄا: @titantims\n ساختهـ شـבهـ توسط : @mohammadrezajiji\n_زبان سوپرگروه_ : *FA*"
 end
 text = string.gsub(text, "yes", "уєѕ")
 text = string.gsub(text, "no", "ησ")
@@ -2575,6 +2839,18 @@ end
 if matches[2] == "سنجاق" and is_owner(msg) then
 return lock_pin(msg, data, target)
 end
+if matches[2] =="فحش" then
+return lock_fosh(msg, data, target)
+end
+if matches[2] =="تبلیغات" then
+return lock_ads(msg, data, target)
+end
+if matches[2] =="انگلیسی"  then
+return lock_english(msg, data, target)
+end
+if matches[2] =="تبچی"  then
+return lock_tab(msg, data, target)
+end
 end
 
 if matches[1] == "بازکردن" and is_mod(msg) then
@@ -2611,6 +2887,18 @@ return unlock_webpage(msg, data, target)
 end
 if matches[2] == "سنجاق" and is_owner(msg) then
 return unlock_pin(msg, data, target)
+end
+if matches[2] =="فحش" then
+return unlock_fosh(msg, data, target)
+end
+if matches[2] =="تبلیغات" then
+return unlock_ads(msg, data, target)
+end
+if matches[2] =="انگلیسی"  then
+return unlock_english(msg, data, target)
+end
+if matches[2] =="تبچی"  then
+return unlock_tab(msg, data, target)
 end
 end
 if matches[1] == "بیصدا" and is_mod(msg) then
@@ -3065,6 +3353,18 @@ text = [[
 🔶پاک کردن لینک
 🔹*قفل لینک*
 🔸*بازکردن لینک*
+
+🔶پاک کردن تبلیغات
+🔹*قفل تبلیغات*
+🔸*بازکردن تبلیغات*
+
+🔶پاک کردن انگلیسی
+🔹*قفل انگلیسی*
+🔸*بازکردن انگلیسی*
+
+🔶پاک کردن فحش
+🔹*قفل فحش*
+🔸*بازکردن فحش*
 
 🔷پاک کردن هشتگ و یوزرنیم
 🔹*قفل تگ*
