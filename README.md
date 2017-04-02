@@ -60,4 +60,4 @@
 <span>cd parsol</span>
 <span>screen ./parsol.sh</span>
 </pre>
-<h4 dir="rtl"> 
+
