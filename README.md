@@ -60,7 +60,7 @@
 <span>cd parsol</span>
 <span>screen ./parsol.sh</span>
 </pre>
-<h6 dir="rtl">ابتدا یک توکن از @botfather دریافت کنید سپس توکن رو به جای عبارت [token] در auto.sh قرار دهید و کد هاب زیر را در ترمینال وارد کنید
+<h6 dir="rtl"ابتدا یک توکن از @botfather دریافت کنید سپس توکن رو به جای عبارت [token] در auto.sh قرار دهید و کد های زیر را در ترمینال وارد کنید
 <h5 dir="rtl">اتولانچ (بدون خاموشی)
 <pre>
 cd parsol
