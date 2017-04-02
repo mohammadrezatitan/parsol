@@ -17,10 +17,11 @@
 <h6>| راهنما | , ...</h6>
 <hr>
 </pre>
-<h4 dir="rtl"> درصورتی که سرور شما رایگان است یا خام است بهتر است ابتدا کد اماده سازی سرور رو وارد کنید 
+<h4 dir="rtl">درصورتی که سرور شما رایگان یا خام است بهتر است ابتدا کد اماده سازی سرور رو وارد کنید
 </h4>
 <pre>
-<span>./bot create</span>
+<span>sudo apt-get update; sudo apt-get upgrade; sudo apt-get install tmux; sudo apt-get install luarocks; sudo apt-get install screen; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev make unzip git redis-server autoconf g++ libjansson-dev libpython-dev expat libexpat1-dev; sudo apt-get update; sudo apt-get install; sudo apt-get install upstart-sysv;
+</span>
 </pre>
 <h4 dir="rtl">حال با توجه به شناسه ای که برای ربات جدید داده شده تبلیغ‌گر خود را راه‌اندازی کنید.
 <br>مثال:</h4>
