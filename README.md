@@ -9,7 +9,6 @@
 </div>
 <a href="https://telegram.me/titanteams"><font size="100">parsol.v3</font></a>
 <h3><p dir="rtl">سورسی کاملا فارسی در زمینه تیجی های جدید :)
-<a href="https://telegram.me/i_naji">ناجی</a> برپایه اخرین نسخه <a href="https://valtman.name/telegram-cli">تلگرام</a>.
 <br>
 <h3 align="right"> <strong> نصب و راه‌اندازی</strong> 🚀
 </h3>
