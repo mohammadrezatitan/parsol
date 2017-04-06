@@ -1167,17 +1167,17 @@ return adminlist(msg)
      if matches[1] == 'ترک' and is_admin(msg) then
   tdcli.changeChatMemberStatus(msg.to.id, our_id, 'Left', dl_cb, nil)
    end
-if matches[1] == 'autoleave' and is_admin(msg) then
+     if matches[1] == 'autoleave' and is_admin(msg) then
 local hash = 'auto_leave_bot'
-—Enable Auto Leave
+--Enable Auto Leave
      if matches[2] == 'enable' then
     redis:del(hash)
    return 'Auto leave has been enabled'
-—Disable Auto Leave
+--Disable Auto Leave
      elseif matches[2] == 'disable' then
     redis:set(hash, true)
    return 'Auto leave has been disabled'
-—Auto Leave Status
+--Auto Leave Status
       elseif matches[2] == 'status' then
       if not redis:get(hash) then
    return 'Auto leave is enable'
@@ -1186,7 +1186,6 @@ local hash = 'auto_leave_bot'
          end
       end
    end
-
 
 if matches[1] == "دستورات سودو" and is_sudo(msg) then
 text = [[
