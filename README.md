@@ -34,6 +34,7 @@
 <span>cd parsol</span>
 <span>chmod +x parsol.sh</span>
 <span>./parsol.sh install</span>
+<span>./parsol.sh</span>
 </pre>
 <h4 dir="rtl">نصب ربات(روش دوم)
 <br></h4>
